@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ROEBUX — Top Up Roblox Tercepat 🌸</title>
+
+<style>
+:root{
+  --purple-100:#f3eeff;--purple-200:#e4d4fc;--purple-300:#c9a8f8;
+  --purple-400:#b088f5;--purple-500:#9b6de8;--purple-600:#7c4dc8;
+  --lavender:#d8c8f8;--lavender-light:#ede6ff;
+  --pink-soft:#fce8f5;--pink:#f4a0d0;
+  --text-dark:#3d2260;--text-mid:#6b4fa0;--text-light:#9b83c8;
+  --shadow:0 4px 24px rgba(155,109,232,.15);
+  --shadow-hover:0 8px 32px rgba(155,109,232,.28);
+  --radius:20px;--radius-lg:28px;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background:linear-gradient(135deg,#f8f0ff 0%,#ede6ff 50%,#f0e8ff 100%);min-height:100vh;color:var(--text-dark);overflow-x:hidden}
+
+/* SPARKLES */
+.sparkle-bg{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+.sp{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--purple-300);animation:sparkleFloat 6s ease-in-out infinite;opacity:0}
+.sp:nth-child(2n){background:var(--pink);width:4px;height:4px}
+.sp:nth-child(3n){background:#fff;box-shadow:0 0 4px var(--purple-400)}
+@keyframes sparkleFloat{0%{opacity:0;transform:translateY(0) scale(0)}50%{opacity:.7}100%{opacity:0;transform:translateY(-80px) scale(1.2)}}
+
+/* PROMO BANNER */
+.promo-banner{background:linear-gradient(135deg,var(--purple-500),var(--purple-600));color:#fff;padding:9px 0;overflow:hidden;position:relative;z-index:99}
+.promo-track{display:flex;gap:80px;animation:marquee 26s linear infinite;white-space:nowrap;width:max-content}
+.promo-track span{font-size:.82rem;font-weight:700;display:inline-flex;align-items:center;gap:8px}
+.promo-cta{background:rgba(255,255,255,.22);border:1.5px solid rgba(255,255,255,.55);color:#fff;padding:3px 14px;border-radius:50px;font-size:.75rem;font-weight:800;cursor:pointer;transition:background .2s;text-decoration:none;margin-left:6px;display:inline-block}
+.promo-cta:hover{background:rgba(255,255,255,.38)}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* NAVBAR */
+.nav-wrapper{position:sticky;top:0;z-index:100;box-shadow:0 2px 16px rgba(155,109,232,.1)}
+nav{background:rgba(255,255,255,.97);backdrop-filter:blur(20px);border-bottom:2px solid var(--purple-100);padding:10px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.nav-logo{font-weight:900;font-size:1.4rem;background:linear-gradient(135deg,var(--purple-500),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;cursor:pointer;flex-shrink:0;letter-spacing:.5px}
+.nav-menu{display:flex;gap:2px;align-items:center}
+.nav-link{padding:7px 13px;border-radius:50px;border:none;cursor:pointer;font-weight:700;font-size:.85rem;color:var(--text-mid);background:transparent;transition:all .2s;white-space:nowrap}
+.nav-link:hover,.nav-link.active{background:var(--purple-100);color:var(--purple-600)}
+.nav-right{display:flex;gap:8px;align-items:center;flex-shrink:0}
+.cart-btn{background:linear-gradient(135deg,var(--purple-400),var(--purple-600));color:#fff;padding:8px 18px;border-radius:50px;border:none;cursor:pointer;font-weight:800;font-size:.85rem;box-shadow:0 4px 14px rgba(155,109,232,.35);position:relative;transition:all .2s}
+.cart-btn:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(155,109,232,.45)}
+.cart-badge{position:absolute;top:-6px;right:-6px;background:var(--pink);color:#fff;font-size:.65rem;font-weight:800;width:20px;height:20px;border-radius:50%;display:none;align-items:center;justify-content:center;box-shadow: 0 2px 4px rgba(0,0,0,0.2);}
+.cart-badge.visible{display:flex}
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;font-size:1.4rem;color:var(--purple-600);padding:4px}
+.nav-mobile{display:none;background:#fff;border-bottom:2px solid var(--purple-100);padding:10px 16px 14px;flex-direction:column;gap:4px}
+.nav-mobile.open{display:flex}
+.nav-mobile-link{padding:10px 14px;border-radius:12px;border:none;cursor:pointer;font-weight:700;font-size:.9rem;color:var(--text-mid);background:transparent;text-align:left;transition:background .2s;width:100%}
+.nav-mobile-link:hover{background:var(--purple-100)}
+@media(max-width:860px){.nav-menu{display:none}.nav-toggle{display:block}}
+
+/* HERO */
+.hero{position:relative;min-height:82vh;display:flex;align-items:center;padding:48px 24px 40px;overflow:hidden;z-index:1}
+.hero-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;width:100%}
+.hero-badge{display:inline-block;background:var(--purple-200);color:var(--purple-600);font-size:.75rem;font-weight:800;padding:5px 14px;border-radius:50px;margin-bottom:14px;letter-spacing:.5px}
+.hero-title{font-weight:900;font-size:clamp(2.2rem,4vw,3.5rem);line-height:1.15;margin-bottom:12px;color:var(--text-dark)}
+.hero-title .hl{background:linear-gradient(135deg,var(--purple-500),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+.hero-sub{font-size:1.05rem;color:var(--text-mid);margin-bottom:24px;line-height:1.6;font-weight:600}
+.hero-info-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.hero-pill{background:rgba(255,255,255,.92);border:2px solid var(--purple-200);border-radius:50px;padding:7px 16px;font-size:.85rem;font-weight:700;color:var(--text-dark);display:inline-flex;align-items:center;gap:7px;box-shadow:0 2px 10px rgba(155,109,232,.1)}
+.hero-pill .dot{width:8px;height:8px;border-radius:50%;background:#5cd45c;flex-shrink:0;animation:blink 2s ease-in-out infinite}
+.hero-pill .dot.y{background:#f4c430;animation:none}
+@keyframes blink{0%,100%{box-shadow:0 0 0 0 rgba(92,212,92,.5)}50%{box-shadow:0 0 0 5px rgba(92,212,92,0)}}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+.hero-cta{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--purple-500),var(--purple-600));color:#fff;padding:13px 28px;border-radius:50px;font-weight:800;font-size:1rem;border:none;cursor:pointer;box-shadow:0 6px 24px rgba(155,109,232,.4);transition:all .25s}
+.hero-cta:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(155,109,232,.5)}
+.hero-cta-sec{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--purple-600);padding:13px 28px;border-radius:50px;font-weight:800;font-size:1rem;border:2px solid var(--purple-200);cursor:pointer;transition:all .25s}
+.hero-cta-sec:hover{background:var(--purple-100);transform:translateY(-2px)}
+
+/* HERO VISUAL */
+.hero-visual-wrapper { position:relative; display:flex; justify-content:center; align-items:center; }
+.hero-glow-large { position:absolute; width:500px; height:500px; background:radial-gradient(circle,rgba(196,160,248,.3) 0%,transparent 70%); border-radius:50%; }
+.hero-glow-small { position:absolute; width:320px; height:320px; background:radial-gradient(circle,rgba(196,160,248,.35) 0%,transparent 70%); border-radius:50%; bottom:0; }
+.hero-main-img { height: 520px; width: auto; object-fit: contain; position: relative; z-index: 1; filter: drop-shadow(0 8px 28px rgba(155,109,232,0.4)); animation: floatImg 4s ease-in-out infinite; }
+
+@keyframes floatImg{ 0%,100%{transform:translateY(0)} 50%{transform:translateY(-15px)} }
+
+/* STATS BAR */
+.stats-bar{background:#fff;border-top:2px solid var(--purple-100);border-bottom:2px solid var(--purple-100);padding:28px 20px;position:relative;z-index:1}
+.stats-inner{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr)}
+.stat-card{display:flex;align-items:center;gap:16px;padding:12px 24px;border-right:2px solid var(--purple-100)}
+.stat-card:last-child{border-right:none}
+.stat-icon{width:50px;height:50px;border-radius:16px;background:var(--purple-100);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0}
+.stat-num{font-weight:900;font-size:1.3rem;color:var(--text-dark);line-height:1}
+.stat-label{font-weight:800;font-size:.85rem;color:var(--text-mid);margin-top:4px}
+.stat-desc{font-size:.75rem;color:var(--text-light);font-weight:600;margin-top:2px}
+
+/* SECTION */
+.section{padding:48px 20px;max-width:1200px;margin:0 auto;position:relative;z-index:1}
+.section-header{text-align:center;margin-bottom:36px}
+.section-tag{display:inline-block;background:linear-gradient(135deg,var(--purple-400),var(--purple-600));color:#fff;font-size:.7rem;font-weight:800;padding:4px 14px;border-radius:50px;margin-bottom:10px;letter-spacing:.5px;text-transform:uppercase}
+.section-title{font-weight:800;font-size:clamp(1.5rem,3vw,2.2rem);color:var(--text-dark);margin-bottom:6px}
+.section-sub{font-size:.95rem;color:var(--text-light);font-weight:600}
+.section-divider{width:60px;height:4px;background:linear-gradient(135deg,var(--purple-400),var(--pink));border-radius:50px;margin:12px auto 0}
+.section-wrap{position:relative;z-index:1}
+.section-wrap:nth-child(even){background:rgba(255,255,255,.5);border-radius:32px;margin:8px 0}
+.subsection-title{font-weight:700;font-size:1.05rem;color:var(--text-mid);margin:28px 0 14px;padding:8px 16px;background:var(--lavender-light);border-left:4px solid var(--purple-400);border-radius:0 12px 12px 0;display:inline-block}
+
+/* FAQ UI */
+.faq-container { max-width: 600px; margin: 0 auto 32px; text-align: left; }
+.faq-item { background: #fff; border: 2px solid var(--purple-200); border-radius: 16px; margin-bottom: 12px; overflow: hidden; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(155,109,232,0.1); }
+.faq-item:hover { border-color: var(--purple-400); }
+.faq-question { padding: 16px 20px; font-weight: 800; font-size: .95rem; color: var(--purple-600); cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+.faq-question::-webkit-details-marker { display: none; }
+.faq-question::after { content: '+'; font-size: 1.4rem; transition: transform 0.3s; color: var(--pink); }
+.faq-item[open] .faq-question::after { transform: rotate(45deg); }
+.faq-answer { padding: 0 20px 20px; font-size: .9rem; color: var(--text-dark); line-height: 1.6; }
+.faq-answer ol { padding-left: 20px; margin-top: 8px; }
+.faq-answer li { margin-bottom: 6px; }
+
+/* PRODUCT GRID */
+.product-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+.product-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);border:2px solid var(--purple-100);display:flex;flex-direction:column;transition:all .25s;position:relative;overflow:hidden;cursor:default}
+.product-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-hover);border-color:var(--purple-300)}
+.card-thumb{background:linear-gradient(135deg,var(--purple-200) 0%,var(--lavender) 50%,var(--purple-300) 100%);height:120px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;flex-shrink:0}
+.card-thumb::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(124,77,200,.15) 100%)}
+.product-card:hover .card-thumb{background:linear-gradient(135deg,var(--purple-300) 0%,var(--purple-400) 50%,var(--purple-500) 100%)}
+
+/* CUSTOM IMAGE & EMOJI PRODUCT */
+.product-emoji{font-size:3.5rem;position:relative;z-index:1;filter:drop-shadow(0 4px 8px rgba(124,77,200,.3));transition:transform .25s}
+.product-card:hover .product-emoji{transform:scale(1.15) rotate(5deg)}
+.product-custom-img { width: auto; max-width: 90%; height: 95px; object-fit: contain; position: relative; z-index: 1; filter: drop-shadow(0 4px 8px rgba(124,77,200,.3)); transition: transform .25s; }
+.product-card:hover .product-custom-img { transform: scale(1.15) rotate(5deg); }
+
+.card-sparkle{position:absolute;top:8px;right:10px;font-size:.75rem;opacity:.6;z-index:2}
+.card-body{padding:16px 14px 14px;display:flex;flex-direction:column;flex:1}
+.product-name{font-weight:800;font-size:.95rem;color:var(--text-dark);line-height:1.3;margin-bottom:8px}
+.product-mulai{font-size:.75rem;color:var(--text-light);font-weight:600;margin-bottom:2px}
+.product-price{font-weight:900;font-size:1.1rem;color:var(--purple-600);margin-bottom:2px}
+.product-robux{font-size:.75rem;color:var(--text-light);font-weight:600;margin-bottom:12px}
+.card-footer{display:flex;align-items:center;justify-content:space-between;margin-top:auto}
+.card-badge{font-size:.7rem;font-weight:800;color:var(--purple-400);background:var(--purple-100);padding:4px 10px;border-radius:50px}
+.badge-hot{background:linear-gradient(135deg, #ff4757, #ff6b81); color:#fff; border:none;}
+.add-btn{display:inline-flex;align-items:center;gap:5px;padding:8px 16px;background:linear-gradient(135deg,var(--purple-500),var(--purple-600));color:#fff;border:none;border-radius:50px;font-weight:800;font-size:.8rem;cursor:pointer;transition:all .2s;white-space:nowrap}
+.add-btn:hover{transform:scale(1.05);box-shadow:0 4px 14px rgba(155,109,232,.4)}
+.add-btn:active{transform:scale(.96)}
+
+/* TOAST */
+.cart-toast{position:fixed;bottom:20px;right:20px;background:linear-gradient(135deg,var(--purple-500),var(--purple-600));color:#fff;padding:12px 20px;border-radius:16px;font-weight:700;font-size:.9rem;box-shadow:0 6px 24px rgba(155,109,232,.4);z-index:999;transform:translateY(80px);transition:transform .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);pointer-events:none; opacity: 0;}
+.cart-toast.show{transform:translateY(0); opacity: 1;}
+
+/* ALERT */
+.alert-badge{display:inline-flex;align-items:center;gap:6px;background:linear-gradient(135deg,#fff4e6,#ffecd2);border:2px solid #f4b942;border-radius:12px;padding:8px 14px;font-size:.8rem;font-weight:700;color:#9a6800;margin-bottom:16px}
+
+/* REQUEST BANNER */
+.request-banner-wrap{max-width:1200px;margin:0 auto;padding:0 20px 40px;position:relative;z-index:1}
+.request-banner{
+  background:linear-gradient(120deg,var(--purple-600) 0%,var(--purple-500) 55%,#c47fe8 100%);
+  border-radius:var(--radius-lg);
+  padding:36px 48px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 10px 40px rgba(124,77,200,.35);
+}
+.request-banner::before{content:'';position:absolute;right:-60px;top:-60px;width:260px;height:260px;background:rgba(255,255,255,.08);border-radius:50%;pointer-events:none;}
+.request-banner::after{content:'';position:absolute;left:40%;bottom:-80px;width:200px;height:200px;background:rgba(255,255,255,.05);border-radius:50%;pointer-events:none;}
+.rb-dots{position:absolute;top:16px;right:180px;display:flex;gap:6px;pointer-events:none;}
+.rb-dots span{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.25);display:inline-block;}
+.rb-text{position:relative;z-index:1}
+.rb-text h3{font-weight:900;font-size:1.5rem;color:#fff;margin-bottom:7px;text-shadow:0 2px 8px rgba(0,0,0,.1);}
+.rb-text p{font-size:.95rem;color:rgba(255,255,255,.9);font-weight:600;margin-bottom:20px;line-height:1.5;}
+.btn-req-wa{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--purple-600);padding:13px 28px;border-radius:50px;font-weight:800;font-size:.95rem;border:none;cursor:pointer;box-shadow:0 4px 18px rgba(0,0,0,.15);transition:all .25s;text-decoration:none;}
+.btn-req-wa:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(0,0,0,.2);color:var(--purple-600);}
+.rb-icon-side{position:relative;z-index:1;font-size:4rem;line-height:1;flex-shrink:0;filter:drop-shadow(0 4px 12px rgba(0,0,0,.15));animation:floatIcon 3s ease-in-out infinite;}
+
+/* REVIEWS CARD */
+.review-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:20px; }
+.review-card { background:#fff; border-radius:var(--radius); padding:24px; box-shadow:var(--shadow); border:2px solid var(--purple-100); transition: transform 0.2s; }
+.review-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-hover); border-color:var(--purple-300); }
+.review-stars { margin-bottom:10px; font-size:1.1rem; }
+.review-text { font-size:.9rem; color:var(--text-mid); font-weight:600; margin-bottom:12px; line-height:1.6; }
+.review-author { font-size:.85rem; font-weight:800; color:var(--text-dark); }
+
+/* PAGES */
+.page{display:none;min-height:100vh;padding:80px 20px 40px;max-width:800px;margin:0 auto;position:relative;z-index:1}
+.page.active{display:block !important; animation: fadeIn 0.4s ease forwards;}
+@keyframes fadeIn { from {opacity: 0; transform: translateY(10px)} to {opacity: 1; transform: translateY(0)} }
+.page-title{font-weight:800;font-size:1.8rem;color:var(--text-dark);margin-bottom:24px}
+.back-btn{background:none;border:none;cursor:pointer;color:var(--purple-500);font-weight:700;font-size:.95rem;margin-bottom:20px;display:flex;align-items:center;gap:6px;padding:0; transition: color 0.2s}
+.back-btn:hover{color:var(--purple-600)}
+
+/* CART */
+.cart-empty{text-align:center;padding:60px 20px;color:var(--text-light); background: #fff; border-radius: var(--radius-lg); border: 2px dashed var(--purple-200);}
+.cart-empty .empty-emoji{font-size:4.5rem;margin-bottom:16px; animation: floatImg 3s ease-in-out infinite;}
+.cart-item{background:#fff;border-radius:var(--radius);padding:16px 20px;margin-bottom:12px;display:flex;align-items:center;gap:16px;box-shadow:var(--shadow);border:2px solid var(--purple-100); transition: all 0.3s ease;}
+.cart-item:hover { border-color: var(--purple-300); }
+.cart-item.removing { opacity: 0; transform: scale(0.9); }
+.ci-emoji{font-size:2rem; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));}
+.ci-custom-img { width: 42px; height: 42px; object-fit: contain; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); }
+.ci-info{flex:1;min-width:0}
+.ci-name{font-weight:800;font-size:1rem;color:var(--text-dark); display: flex; align-items: center; gap: 8px; flex-wrap: wrap;}
+.ci-section{font-size:.75rem;color:var(--text-light);font-weight:600; margin-top: 4px;}
+.ci-price{font-weight:800;color:var(--purple-600);font-size:1.05rem;white-space:nowrap}
+/* Qty Controls */
+.ci-qty-controls { display: flex; align-items: center; gap: 8px; background: var(--purple-100); padding: 4px 8px; border-radius: 50px; }
+.qty-btn { background: #fff; border: 1px solid var(--purple-200); width: 24px; height: 24px; border-radius: 50%; font-weight: bold; font-size: 1rem; color: var(--purple-600); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.2s;}
+.qty-btn:hover { background: var(--purple-200); color: var(--purple-600); transform: scale(1.1);}
+.qty-num { font-size: .85rem; font-weight: 800; width: 16px; text-align: center; color: var(--text-dark);}
+
+.ci-remove{background:none;border:none;cursor:pointer;color:var(--pink);font-size:1.2rem;padding:6px;border-radius:50%;transition:all .2s;flex-shrink:0; display: flex; align-items: center; justify-content: center;}
+.ci-remove:hover{background:var(--pink-soft); transform: scale(1.1);}
+.cart-total-box{background:linear-gradient(135deg,var(--purple-500),var(--purple-600));border-radius:var(--radius);padding:24px;color:#fff;margin-top:24px;display:flex;justify-content:space-between;align-items:center; box-shadow: 0 8px 24px rgba(155,109,232,.3);}
+.cart-total-label{font-weight:700;font-size:1rem;opacity:.9}
+.cart-total-amount{font-weight:900;font-size:1.6rem}
+.btn-primary{display:flex; justify-content:center; align-items:center; width:100%;padding:16px;background:linear-gradient(135deg,var(--purple-400),var(--purple-600));color:#fff;border:none;border-radius:50px;font-weight:800;font-size:1.05rem;cursor:pointer;margin-top:20px;box-shadow:0 4px 18px rgba(155,109,232,.35);transition:all .25s}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(155,109,232,.45)}
+.btn-primary:disabled { background: var(--purple-200); box-shadow: none; cursor: not-allowed; transform: none; opacity: 0.7; }
+.btn-secondary{display:block;width:100%;padding:14px;background:var(--purple-100);color:var(--purple-600);border:2px solid var(--purple-200);border-radius:50px;font-weight:800;font-size:1rem;cursor:pointer;margin-top:12px;transition:all .2s}
+.btn-secondary:hover{background:var(--purple-200)}
+
+/* CHECKOUT */
+.checkout-card{background:#fff;border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow);border:2px solid var(--purple-100);margin-bottom:20px}
+.form-label{display:block;font-weight:700;font-size:.9rem;color:var(--text-mid);margin-bottom:8px}
+.form-input{width:100%;padding:14px 18px;border:2px solid var(--purple-200);border-radius:14px;font-family: inherit;font-size:.95rem;color:var(--text-dark);background:var(--purple-100);transition:border .2s, background .2s;outline:none;margin-bottom:16px}
+.form-input:focus{border-color:var(--purple-400);background:#fff}
+.payment-methods{display:grid;grid-template-columns:repeat(auto-fill,minmax(110px,1fr));gap:12px;margin-bottom:16px}
+.pm-option{border:2px solid var(--purple-200);border-radius:16px;padding:14px 8px;text-align:center;cursor:pointer;transition:all .2s;background:var(--purple-100)}
+.pm-option:hover{border-color:var(--purple-400);background:var(--purple-200)}
+.pm-option.selected{border-color:var(--purple-500);background:var(--lavender-light);box-shadow:0 4px 14px rgba(155,109,232,.2); transform: translateY(-2px);}
+.pm-emoji{font-size:1.6rem;display:block;margin-bottom:6px}
+.pm-name{font-size:.8rem;font-weight:800;color:var(--text-dark)}
+.form-error{display:none;color:#e05c8a;font-size:.85rem;font-weight:700;margin-top:-10px;margin-bottom:16px; padding-left: 4px;}
+.form-error.show{display:block; animation: fadeIn 0.3s ease;}
+
+/* PAYMENT */
+.payment-box{background:#fff;border-radius:var(--radius-lg);padding:36px;box-shadow:var(--shadow);border:2px solid var(--purple-200);text-align:center}
+.payment-box h3{font-weight:800;color:var(--text-dark);margin-bottom:24px;font-size:1.3rem}
+.qris-img-placeholder{width:240px;height:240px;margin:0 auto 20px;background:linear-gradient(135deg,var(--purple-100),var(--lavender));border-radius:24px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:2px dashed var(--purple-300)}
+.qris-real-img{width:240px;height:240px;object-fit:contain;border-radius:24px;margin:0 auto 20px;display:block;border:3px solid var(--purple-200);box-shadow:0 6px 24px rgba(155,109,232,.2)}
+.qris-label{font-size:.95rem;color:var(--text-mid);font-weight:600;margin-bottom:24px; line-height: 1.5;}
+.qris-nominal-box{background:linear-gradient(135deg,var(--purple-100),var(--lavender-light));border:2px solid var(--purple-300);border-radius:20px;padding:16px 24px;margin-bottom:20px;text-align:center}
+.qris-nominal-label{font-size:.8rem;font-weight:700;color:var(--text-light);margin-bottom:6px}
+.qris-nominal-amount{font-weight:900;font-size:1.6rem;color:var(--purple-600)}
+.qris-note{background:#fff8e1;border:2px solid #f4c430;border-radius:14px;padding:14px 18px;font-size:.85rem;font-weight:700;color:#9a6800;margin-bottom:20px;text-align:left;line-height:1.6}
+.ewallet-info{background:var(--purple-100);border-radius:16px;padding:20px;margin-bottom:20px; text-align: left;}
+.ewallet-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.ewallet-row:last-child{margin-bottom: 0;}
+.ewallet-key{font-size:.85rem;font-weight:700;color:var(--text-light)}
+.ewallet-val{font-weight:800;color:var(--text-dark);font-size:1rem}
+.copy-btn{padding:12px 24px;background:var(--purple-100);border:2px solid var(--purple-300);border-radius:50px;font-weight:800;font-size:.9rem;color:var(--purple-600);cursor:pointer;transition:all .2s;margin-bottom:20px; width: 100%;}
+.copy-btn:hover{background:var(--purple-200)}
+.btn-wa{display:flex;justify-content:center;align-items:center;width:100%;padding:18px;background:linear-gradient(135deg,#25d366,#1da851);color:#fff;border:none;border-radius:50px;font-weight:800;font-size:1.05rem;cursor:pointer;margin-top:20px;box-shadow:0 4px 18px rgba(37,211,102,.3);transition:all .25s}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.4)}
+.btn-wa:disabled { opacity: 0.8; transform: none; box-shadow: none; cursor: not-allowed; }
+
+.order-summary-mini{background:var(--lavender-light);border-radius:16px;padding:18px 24px;margin-bottom:24px;text-align:left}
+.osm-title{font-weight:800;font-size:.9rem;color:var(--purple-600);margin-bottom:12px; display: flex; align-items: center; gap: 8px;}
+.osm-item{font-size:.85rem;color:var(--text-mid);font-weight:600;padding:4px 0; display: flex; align-items: center; justify-content: space-between;}
+.osm-qty { color: var(--purple-400); font-weight: 800; width: 24px; display: inline-block;}
+.osm-total{font-weight:900;color:var(--text-dark);margin-top:12px;padding-top:12px;border-top:2px dashed var(--purple-200);font-size:1rem; display: flex; justify-content: space-between;}
+
+/* UPLOAD BUKTI */
+.upload-proof-box { background: #fff; border-radius: var(--radius); padding: 24px; box-shadow: var(--shadow); border: 2px solid var(--purple-100); margin-bottom: 24px; text-align: center; }
+.upload-proof-box h4 { font-weight: 800; color: var(--text-dark); margin-bottom: 16px; font-size: 1.1rem; }
+.upload-area { border: 2px dashed var(--purple-300); border-radius: 16px; padding: 30px 20px; cursor: pointer; transition: all 0.2s; background: var(--purple-100); position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 180px; }
+.upload-area:hover { background: var(--purple-200); border-color: var(--purple-400); }
+.upload-icon { font-size: 2.8rem; margin-bottom: 10px; filter: drop-shadow(0 2px 4px rgba(124,77,200,.2)); }
+.upload-text { font-size: 0.95rem; font-weight: 800; color: var(--text-mid); margin-bottom: 4px; }
+.upload-subtext { font-size: 0.75rem; color: var(--text-light); font-weight: 600;}
+#proofPreview { max-width: 100%; max-height: 250px; border-radius: 12px; object-fit: contain; box-shadow: 0 4px 12px rgba(0,0,0,0.1); z-index: 2; position: relative; }
+.remove-proof-btn { background: #ffe6eb; color: #e05c8a; border: none; padding: 8px 16px; border-radius: 50px; font-weight: 700; font-size: 0.85rem; cursor: pointer; margin-top: 16px; transition: all 0.2s; display: inline-flex; align-items: center; gap: 6px; }
+.remove-proof-btn:hover { background: #ffcdd8; transform: translateY(-2px); }
+
+/* CUSTOM WA MODAL */
+.custom-modal-overlay { position: fixed; inset: 0; background: rgba(61, 34, 96, 0.7); backdrop-filter: blur(4px); z-index: 1000; display: none; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s ease; }
+.custom-modal-overlay.show { display: flex; opacity: 1; }
+.custom-modal { background: #fff; width: 90%; max-width: 420px; border-radius: var(--radius-lg); padding: 36px 28px; text-align: center; box-shadow: 0 12px 40px rgba(0,0,0,0.3); transform: translateY(20px); transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+.custom-modal-overlay.show .custom-modal { transform: translateY(0); }
+.cm-icon { font-size: 3.5rem; margin-bottom: 16px; animation: floatImg 3s ease-in-out infinite; }
+.cm-title { font-weight: 900; font-size: 1.4rem; color: var(--text-dark); margin-bottom: 12px; }
+.cm-desc { font-size: 0.95rem; color: var(--text-mid); font-weight: 600; line-height: 1.5; margin-bottom: 28px; }
+.cm-btn { display: flex; justify-content: center; align-items: center; gap: 8px; width: 100%; padding: 16px; background: linear-gradient(135deg, #25d366, #1da851); color: #fff; border: none; border-radius: 50px; font-weight: 800; font-size: 1.05rem; cursor: pointer; box-shadow: 0 4px 14px rgba(37,211,102,.3); transition: all 0.2s; }
+.cm-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37,211,102,.4); }
+.cm-btn:disabled { opacity: 0.8; cursor: not-allowed; transform: none; box-shadow: none; }
+.cm-close { font-size: 0.85rem; color: var(--text-light); margin-top: 16px; cursor: pointer; font-weight: 700; background: none; border: none; text-decoration: underline;}
+
+/* SPINNER */
+.spinner { width: 20px; height: 20px; border: 3px solid rgba(255,255,255,0.3); border-radius: 50%; border-top-color: #fff; animation: spin 1s ease-in-out infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* FOOTER */
+footer{text-align:center;padding:40px 20px 60px;position:relative;z-index:1}
+.footer-inner{background:#fff;border-radius:var(--radius-lg);padding:40px 32px;box-shadow:var(--shadow);border:2px solid var(--purple-100);max-width:700px;margin:0 auto}
+.footer-logo{font-weight:900;font-size:1.8rem;background:linear-gradient(135deg,var(--purple-500),var(--pink));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:12px}
+.footer-links{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin:20px 0}
+.footer-link{font-size:.9rem;font-weight:700;color:var(--text-mid);text-decoration:none;cursor:pointer; transition: color 0.2s;}
+.footer-link:hover{color:var(--purple-600)}
+.footer-text{font-size:.95rem;color:var(--text-light);font-weight:600;line-height:1.6; margin-top: 10px;}
+.footer-hearts{font-size:1.4rem;margin-top:16px; letter-spacing: 4px;}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero-inner{grid-template-columns:1fr;text-align:center}
+  .hero-visual-wrapper{order:-1}
+  .hero-main-img{height:300px;}
+  .hero-glow-large {width: 320px; height: 320px;}
+  .hero-glow-small {width: 220px; height: 220px;}
+  .hero-info-row,.hero-btns{justify-content:center}
+  .product-grid{grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+  .stats-inner{grid-template-columns:1fr}
+  .stat-card{border-right:none;border-bottom:2px solid var(--purple-100)}
+  .stat-card:last-child{border-bottom:none}
+}
+@media(max-width:480px){
+  .product-grid{grid-template-columns:1fr 1fr}
+  .product-card{padding:0}
+  .card-body { padding: 12px 10px 10px; }
+  .payment-methods{grid-template-columns:repeat(2,1fr)}
+  .request-banner{flex-direction:column;text-align:center;padding:28px 24px}
+  .rb-icon-side{font-size:3rem}
+  .rb-dots{display:none}
+  .ci-name{flex-direction: column; align-items: flex-start; gap: 4px;}
+  .ci-qty-controls { margin-top: 4px; }
+}
+#main-page{display:block}
+</style>
+</head>
+<body>
+
+<div class="sparkle-bg" id="sparkleContainer"></div>
+
+<div class="promo-banner">
+  <div class="promo-track">
+    <span>📢 Mau Promo &amp; Diskon Banyak? Join Saluran WA ROEBUX 🔥 <a class="promo-cta" href="https://wa.me/6289606457010" target="_blank" rel="noopener noreferrer">Cek di Sini</a></span>
+    <span>✨ Top Up Robux &amp; Item Game Roblox Indonesia — Tercepat &amp; Terpercaya 💜</span>
+    <span>⚡ Proses cepat, harga terjangkau, CS siap bantu </span>
+    <span>📢 Mau Promo &amp; Diskon Banyak? Join Saluran WA ROEBUX 🔥 <a class="promo-cta" href="https://wa.me/6289606457010" target="_blank" rel="noopener noreferrer">Cek di Sini</a></span>
+    <span>✨ Top Up Robux &amp; Item Game Roblox Indonesia — Tercepat &amp; Terpercaya 💜</span>
+    <span>⚡ Proses cepat, harga terjangkau, CS siap </span>
+  </div>
+</div>
+
+<div class="nav-wrapper">
+  <nav>
+    <div class="nav-logo" onclick="goHome()">ROEBUX ✨</div>
+    <div class="nav-menu">
+      <button class="nav-link active" onclick="goHome()">Beranda</button>
+      <button class="nav-link" onclick="scrollSec('robux')">Beli Robux</button>
+      <button class="nav-link" onclick="scrollSec('items')">Beli Item</button>
+      <button class="nav-link" onclick="openWaCek()">Cek Pesanan</button>
+      <button class="nav-link" onclick="scrollSec('ulasan')">Ulasan</button>
+      <button class="nav-link" onclick="openWaBantuan()">Bantuan</button>
+    </div>
+    <div class="nav-right">
+      <button class="cart-btn" onclick="showCart()" aria-label="Lihat Keranjang">
+        🛒 Keranjang
+        <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+      <button class="nav-toggle" onclick="toggleNav()" aria-label="Toggle Menu">☰</button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="navMobile">
+    <button class="nav-mobile-link" onclick="goHome();toggleNav()">🏠 Beranda</button>
+    <button class="nav-mobile-link" onclick="scrollSec('robux');toggleNav()">💎 Beli Robux</button>
+    <button class="nav-mobile-link" onclick="scrollSec('items');toggleNav()">🎁 Beli Item</button>
+    <button class="nav-mobile-link" onclick="openWaCek();toggleNav()">📦 Cek Pesanan</button>
+    <button class="nav-mobile-link" onclick="scrollSec('ulasan');toggleNav()">⭐ Ulasan</button>
+    <button class="nav-mobile-link" onclick="openWaBantuan();toggleNav()">💬 Bantuan</button>
+  </div>
+</div>
+
+<div class="cart-toast" id="cartToast">✨ Item ditambahkan!</div>
+
+<div id="main-page">
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="hero-badge">✨ #1 Top Up Roblox Indonesia</span>
+      <h1 class="hero-title"><span class="hl">Top Up Robux</span><br>Sekarang! 🌸</h1>
+      <p class="hero-sub">Dapatkan Robux sekarang dengan harga paling murah.<br>Proses cepat, aman, dan legal!</p>
+      <div class="hero-info-row">
+        <div class="hero-pill"><span class="dot"></span>Harga: Rp 75.000 / 500 R$</div>
+        <div class="hero-pill"><span class="dot y"></span>Stok Robux: 1000.000 R$</div>
+      </div>
+      <div class="hero-btns">
+        <button class="hero-cta" onclick="scrollSec('robux')">💎 Beli Robux</button>
+        <button class="hero-cta-sec" onclick="scrollSec('items')">🎁 Beli Item</button>
+      </div>
+    </div>
+    <div class="hero-visual-wrapper">
+      <div class="hero-glow-large"></div>
+      <div style="position:relative;display:flex;justify-content:center;align-items:flex-end">
+        <div class="hero-glow-small"></div>
+        <img src="./roe2.png" class="hero-main-img" alt="Roebux Chibi">
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-card">
+      <div class="stat-icon">🛍️</div>
+      <div>
+        <div class="stat-num" id="stat-robux">0 R$</div>
+        <div class="stat-label">Robux Terjual</div>
+        <div class="stat-desc">Total R$ robux berhasil terjual</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">✅</div>
+      <div>
+        <div class="stat-num" id="stat-trx">0</div>
+        <div class="stat-label">Transaksi Sukses</div>
+        <div class="stat-desc">Total transaksi sukses dilakukan</div>
+      </div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon">⚡</div>
+      <div>
+        <div class="stat-num">Kilat</div>
+        <div class="stat-label">Pengiriman Cepat</div>
+        <div class="stat-desc">Proses langsung via WhatsApp admin</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="products">
+
+<div class="section-wrap" id="robux">
+<section class="section">
+  <div class="section-header">
+    <span class="section-tag">🔑 Login Required</span>
+    <h2 class="section-title">Robux via Login</h2>
+    <div class="section-divider"></div>
+    <div style="margin-top:16px"><span class="alert-badge">⚠️ Wajib Menyiapkan Backup Code sebelum proses!</span></div>
+    <p class="section-sub">Robux langsung masuk ke akun Roblox kamu</p>
+  </div>
+  
+  <div class="faq-container">
+    <details class="faq-item">
+      <summary class="faq-question">❓ Cara Mendapatkan Backup Code Roblox</summary>
+      <div class="faq-answer">
+        <ol>
+          <li>Login ke akun kamu di website <b>Roblox.com</b></li>
+          <li>Pergi ke menu <b>Settings</b> (ikon gerigi), lalu pilih tab <b>Security</b></li>
+          <li>Scroll ke bawah, cari <b>Backup Codes</b> lalu klik <b>Generate</b></li>
+          <li>Simpan salah satu kode tersebut untuk diberikan ke admin kami via WhatsApp nantinya. 💜</li>
+        </ol>
+      </div>
+    </details>
+  </div>
+
+  <div class="product-grid" id="grid-robux"></div>
+</section>
+</div>
+
+<div class="section-wrap" id="items">
+<section class="section">
+  <div class="section-header">
+    <span class="section-tag">🏠 Bloxburg</span>
+    <h2 class="section-title">Bloxburg Gamepass &amp; Uang</h2>
+    <div class="section-divider"></div>
+    <p class="section-sub">Gamepass dan currency untuk Bloxburg</p>
+  </div>
+  <div class="subsection-title">🎫 Gamepass</div>
+  <div class="product-grid" id="grid-blox-gp"></div>
+  <div class="subsection-title">💜 Uang Ungu</div>
+  <div class="product-grid" id="grid-blox-ungu"></div>
+  <div class="subsection-title">💚 Uang Hijau</div>
+  <div class="product-grid" id="grid-blox-hijau"></div>
+</section>
+</div>
+
+<div class="section-wrap">
+<section class="section">
+  <div class="section-header">
+    <span class="section-tag">🎣 Fish It</span>
+    <h2 class="section-title">Gift Fish It</h2>
+    <div class="section-divider"></div>
+    <p class="section-sub">Gamepass &amp; item Fish It</p>
+  </div>
+  <div class="subsection-title">🎁 Gamepass</div>
+  <div class="product-grid" id="grid-fish-gp"></div>
+  <div class="subsection-title">🐰 Item Spesial</div>
+  <div class="product-grid" id="grid-fish-special"></div>
+  <div class="subsection-title">🔵 Spin Azure, Pirate &amp; Elder</div>
+  <div class="product-grid" id="grid-fish-spin"></div>
+  <div class="subsection-title">💃 Emote &amp; Spin Ability</div>
+  <div class="product-grid" id="grid-fish-emote"></div>
+  <div class="subsection-title">⚡ Boost Time</div>
+  <div class="product-grid" id="grid-fish-boost"></div>
+</section>
+</div>
+
+<div class="section-wrap">
+<section class="section">
+  <div class="section-header">
+    <span class="section-tag">🌾 Sawah Indo</span>
+    <h2 class="section-title">Sawah Indo Gamepass</h2>
+    <div class="section-divider"></div>
+    <p class="section-sub">Upgrade farming experience kamu!</p>
+  </div>
+  <div class="product-grid" id="grid-sawah"></div>
+</section>
+</div>
+
+<div class="section-wrap">
+<section class="section">
+  <div class="section-header">
+    <span class="section-tag">🚗 DDS</span>
+    <h2 class="section-title">DDS Gamepass</h2>
+    <div class="section-divider"></div>
+    <p class="section-sub">Lengkapi mobil impian kamu di DDS!</p>
+  </div>
+  <div class="product-grid" id="grid-dds"></div>
+</section>
+</div>
+
+<div class="section-wrap">
+<section class="section">
+  <div class="section-header">
+    <span class="section-tag">🏃 EVADE</span>
+    <h2 class="section-title">EVADE Gamepass</h2>
+    <div class="section-divider"></div>
+    <p class="section-sub">Set dan emote keren untuk Evade!</p>
+  </div>
+  <div class="product-grid" id="grid-evade"></div>
+</section>
+</div>
+
+<div class="request-banner-wrap">
+  <div class="request-banner">
+    <div class="rb-dots">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <div class="rb-text">
+      <h3>🎮 Game tidak tersedia?</h3>
+      <p>Request game lain via WhatsApp, admin siap bantu! 💜<br>Kami akan usahakan secepatnya untuk kamu.</p>
+      <a class="btn-req-wa" href="https://wa.me/6289606457010?text=Halo+admin+ROEBUX,+saya+mau+request+game+yang+belum+tersedia+di+website." target="_blank" rel="noopener noreferrer">
+        💬 Request via WhatsApp
+      </a>
+    </div>
+    <div class="rb-icon-side">🎮✨</div>
+  </div>
+</div>
+
+<div class="section-wrap" id="ulasan">
+<section class="section">
+  <div class="section-header">
+    <span class="section-tag">⭐ Ulasan</span>
+    <h2 class="section-title">Apa Kata Mereka?</h2>
+    <div class="section-divider"></div>
+    <p class="section-sub">Ribuan pelanggan puas dengan ROEBUX 💜</p>
+  </div>
+  
+  <div class="review-grid">
+    <div class="review-card">
+      <div class="review-stars">⭐⭐⭐⭐⭐</div>
+      <div class="review-text">"Prosesnya super cepat! Beli 1000 Robux langsung masuk ke akun kurang dari 5 menit. Recommended banget!"</div>
+      <div class="review-author">— Putri_Rblx</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">⭐⭐⭐⭐⭐</div>
+      <div class="review-text">"Udah langganan di sini dari lama. Harga murah, admin ramah, dan aman banget. Gak bakal pindah tempat lain!"</div>
+      <div class="review-author">— Azzam_Gaming</div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">⭐⭐⭐⭐⭐</div>
+      <div class="review-text">"Top up Bloxburg gamepass di sini gampang banget. Tinggal pilih, bayar, chat WA, selesai! 🌸"</div>
+      <div class="review-author">— Nadia_Bloxburg</div>
+    </div>
+  </div>
+</section>
+</div>
+
+</div><footer>
+  <div class="footer-inner">
+    <div class="footer-logo">ROEBUX ✨</div>
+    <div class="footer-links">
+      <span class="footer-link" onclick="goHome()">Beranda</span>
+      <span class="footer-link" onclick="scrollSec('robux')">Beli Robux</span>
+      <span class="footer-link" onclick="scrollSec('items')">Beli Item</span>
+      <span class="footer-link" onclick="openWaBantuan()">Bantuan</span>
+    </div>
+    <p class="footer-text">Terima kasih sudah percaya dengan ROEBUX 💜<br>Top Up Roblox tercepat &amp; terpercaya via WhatsApp Indonesia</p>
+    <div class="footer-hearts">💜 🌸 ⭐ 🌸 💜</div>
+  </div>
+</footer>
+</div><div id="cart-page" class="page">
+  <button class="back-btn" onclick="goHome()" aria-label="Kembali">← Kembali Belanja</button>
+  <div class="page-title">🛒 Keranjang Belanja</div>
+  <div id="cart-items-container"></div>
+</div>
+
+<div id="checkout-page" class="page">
+  <button class="back-btn" onclick="showCart()" aria-label="Kembali">← Kembali ke Keranjang</button>
+  <div class="page-title">📝 Detail Pemesanan</div>
+  <div class="checkout-card">
+    <label class="form-label" for="roblox-username">🎮 Username Roblox</label>
+    <input type="text" id="roblox-username" class="form-input" placeholder="Masukkan username Roblox kamu..." autocomplete="off">
+    <div class="form-error" id="err-username">Username tidak boleh kosong!</div>
+    
+    <label class="form-label" for="wa-number">📱 Nomor WhatsApp</label>
+    <input type="tel" id="wa-number" class="form-input" placeholder="Contoh: 081234567890" pattern="[0-9]*" inputmode="numeric">
+    <div class="form-error" id="err-wa">Nomor WhatsApp tidak valid (Hanya angka)!</div>
+    
+    <label class="form-label">💳 Metode Pembayaran</label>
+    <div class="payment-methods">
+      <div class="pm-option" data-method="QRIS" onclick="selectPay('QRIS')"><span class="pm-emoji">📱</span><span class="pm-name">QRIS</span></div>
+      <div class="pm-option" data-method="Dana" onclick="selectPay('Dana')"><span class="pm-emoji">💙</span><span class="pm-name">Dana</span></div>
+      <div class="pm-option" data-method="Gopay" onclick="selectPay('Gopay')"><span class="pm-emoji">💚</span><span class="pm-name">GoPay</span></div>
+      <div class="pm-option" data-method="Bank Transfer" onclick="selectPay('Bank Transfer')"><span class="pm-emoji">🏦</span><span class="pm-name">SeaBank</span></div>
+    </div>
+    <div class="form-error" id="err-payment">Pilih metode pembayaran dulu!</div>
+  </div>
+  <div class="checkout-card">
+    <div style="font-weight:800;color:var(--text-mid);margin-bottom:16px">📦 Ringkasan Pesanan</div>
+    <div id="checkout-summary"></div>
+  </div>
+  <button class="btn-primary" onclick="processCheckout()">💳 Bayar Sekarang</button>
+  <button class="btn-secondary" onclick="showCart()">← Kembali ke Keranjang</button>
+</div>
+
+<div id="payment-page" class="page">
+  <button class="back-btn" onclick="showCheckout()" aria-label="Kembali">← Kembali</button>
+  <div class="page-title">💳 Info Pembayaran</div>
+  <div class="order-summary-mini" id="pay-order-summary"></div>
+  
+  <div class="payment-box">
+    <h3 id="pay-method-title"></h3>
+    <div id="payment-info-container"></div>
+  </div>
+
+  <div class="upload-proof-box">
+    <h4>📸 Upload Bukti Transfer</h4>
+    <div class="upload-area" id="uploadArea" onclick="document.getElementById('proofInput').click()">
+      <input type="file" id="proofInput" accept="image/*" style="display:none" onchange="handleProofUpload(event)">
+      
+      <div id="uploadPlaceholder">
+        <div class="upload-icon">📤</div>
+        <div class="upload-text">Klik untuk pilih gambar bukti</div>
+        <div class="upload-subtext">Format: JPG, PNG (Max 5MB)</div>
+      </div>
+      
+      <img id="proofPreview" src="" alt="Preview Bukti" style="display:none;">
+    </div>
+    <button class="remove-proof-btn" id="removeProofBtn" onclick="removeProof()" style="display:none;">
+      ✕ Hapus Gambar
+    </button>
+  </div>
+
+  <button class="btn-wa" onclick="openWA()">✅ Saya Sudah Bayar — Chat Admin WA</button>
+</div>
+
+<div class="custom-modal-overlay" id="waModalOverlay">
+  <div class="custom-modal">
+    <div class="cm-icon">💬</div>
+    <div class="cm-title">Lanjut ke WhatsApp</div>
+    <div class="cm-desc" id="waModalDesc"></div>
+    <button class="cm-btn" onclick="executeWA()">Buka WhatsApp Sekarang</button>
+    <button class="cm-close" onclick="closeModal()">Batal</button>
+  </div>
+</div>
+
+<script>
+const paymentInfo={
+  "QRIS":{type:"qris"},
+  "Dana":{type:"ewallet",number:"089606457010",name:"AMELIA NIHE"},
+  "Gopay":{type:"ewallet",number:"083199414534",name:"AMELIA NIHE"},
+  "Bank Transfer":{type:"bank",bank:"SeaBank",number:"901446340924",name:"AMELIA NIHE"}
+};
+
+// Data array tanpa properti style display=none
+const products={
+  "grid-robux":[
+    {name:"450 Premium",price:75000,emoji:"👑", image:"./rbx.png", robux:"450 Premium"},
+    {name:"500 Robux",price:75000,emoji:"💎", image:"./rbx.png", robux:"500 R$"},
+    {name:"1000 Robux",price:145000,emoji:"💎", image:"./rbx.png", robux:"1.000 R$", hot:true},
+    {name:"1500 Robux",price:238000,emoji:"💎", image:"./rbx.png", robux:"1.500 R$"},
+    {name:"2000 Robux",price:290000,emoji:"💎", image:"./rbx.png", robux:"2.000 R$"},
+    {name:"2500 Robux",price:385500,emoji:"💎", image:"./rbx.png", robux:"2.500 R$"},
+    {name:"3000 Robux",price:477000,emoji:"💎", image:"./rbx.png", robux:"3.000 R$"},
+    {name:"3500 Robux",price:520000,emoji:"💎", image:"./rbx.png", robux:"3.500 R$"},
+    {name:"4000 Robux",price:600000,emoji:"💎", image:"./rbx.png", robux:"4.000 R$"},
+    {name:"4500 Robux",price:660500,emoji:"💎", image:"./rbx.png", robux:"4.500 R$"},
+    {name:"5000 Robux",price:730000,emoji:"🏆", image:"./rbx.png", robux:"5.000 R$"},
+  ],
+  "grid-blox-gp":[
+    {name:"Large Plot",price:21250,emoji:"🏡", image:"./bloxburg.png"},
+    {name:"Multiple Floor",price:25500,emoji:"🏢",image:"./bloxburg.png"},
+    {name:"Excellent Employee",price:25500,emoji:"⭐",image:"./bloxburg.png"},
+    {name:"Basement",price:8500,emoji:"🏚️",image:"./bloxburg.png"},
+    {name:"Marvelous Mood",price:15300,emoji:"😊",image:"./bloxburg.png"},
+    {name:"Advance Placing",price:17000,emoji:"🔧",image:"./bloxburg.png"},
+    {name:"Premium",price:34000,emoji:"💜",image:"./bloxburg.png"},
+    {name:"Transform Plus",price:51000,emoji:"✨",image:"./bloxburg.png"},
+  ],
+  "grid-blox-ungu":[
+    {name:"50$",price:1275,emoji:"💰", robux:"Uang Ungu"},
+    {name:"250$",price:5950,emoji:"💰", robux:"Uang Ungu"},
+    {name:"500$",price:10200,emoji:"💰", robux:"Uang Ungu"},
+    {name:"2.500$",price:44625,emoji:"💰", robux:"Uang Ungu"},
+    {name:"5.000$",price:82875,emoji:"💰", robux:"Uang Ungu"},
+    {name:"25.000$",price:382500,emoji:"💰", robux:"Uang Ungu"},
+  ],
+  "grid-blox-hijau":[
+    {name:"1.000$",price:1275,emoji:"💵",robux:"Uang Hijau"},
+    {name:"5.000$",price:5950,emoji:"💵",robux:"Uang Hijau"},
+    {name:"10.000$",price:10200,emoji:"💵",robux:"Uang Hijau"},
+    {name:"50.000$",price:44625,emoji:"💵",robux:"Uang Hijau"},
+    {name:"100.000$",price:82875,emoji:"💵",robux:"Uang Hijau"},
+    {name:"500.000$",price:382500,emoji:"💵",robux:"Uang Hijau"},
+  ],
+  "grid-fish-gp":[
+    {name:"VIP",price:35600,emoji:"⭐",image:"./fish/vip.png"},
+    {name:"Mutasi",price:23600,emoji:"🔮",image:"./fish/mutasi.png"},
+    {name:"Advance Luck",price:43600,emoji:"🍀",image:"./fish/advance.png"},
+    {name:"Extra Luck",price:19600,emoji:"🍀",image:"./fish/extra.png"},
+    {name:"Double Exp",price:15600,emoji:"⚡",image:"./fish/xp.png"},
+    {name:"Hoverboard",price:18000,emoji:"🛹",image:"./fish/hover.png"},
+    {name:"Sell Anywhere",price:25200,emoji:"🏪",image:"./fish/sell.png"},
+    {name:"Small Luck",price:4000,emoji:"🌸",image:"./fish/small.png"},
+  ],
+  "grid-fish-special":[
+    {name:"Empyrean Staff",price:72000,emoji:"🐰", image:"./fish/empy2.png", robux:"Item Spesial", hot:true},
+    {name:"Void Guitar",price:68000,emoji:"☂️",image:"./fish/void.png"},
+    {name:"High Tech Speedcraft",price:40000,emoji:"🥚",image:"./fish/boat.png"},
+  ],
+  "grid-fish-spin":[
+    {name:"1x Spin Azure",price:8720,emoji:"🔵",image:"./fish/dice.png"},
+    {name:"5x Spin Azure",price:43600,emoji:"🔵",image:"./fish/dice.png"},
+    {name:"1x Spin Pirate",price:8720,emoji:"🏴‍☠️",image:"./fish/dice.png"},
+    {name:"5x Spin Pirate",price:43600,emoji:"🏴‍☠️",image:"./fish/dice.png"},
+    {name:"1x Spin Elder",price:7920,emoji:"🌙",image:"./fish/dice.png"},
+    {name:"5x Spin Elder",price:39600,emoji:"🌙",image:"./fish/dice.png"},
+  ],
+  "grid-fish-emote":[
+    {name:"1x Emote",price:4800,emoji:"💃",image:"./fish/emote.png"},
+    {name:"5x Emote",price:23600,emoji:"💃",image:"./fish/emote.png"},
+    {name:"1x Spin ability",price:4000,emoji:"🎰",image:"./fish/49.png"},
+    {name:"10x Spin",price:39200,emoji:"🎰",image:"./fish/490.png"},
+    {name:"25x Spin",price:98000,emoji:"🎰",image:"./fish/1225.png"},
+  ],
+  "grid-fish-boost":[
+    {name:"x0–x2 (1 Jam)",price:7920,emoji:"🍀",image:"./fish/boost.png", robux:"Boost"},
+    {name:"x2–x4 (2 Jam)",price:31680,emoji:"🍀",image:"./fish/boost.png",robux:"Boost"},
+    {name:"x0–x4 (3 Jam)",price:39600,emoji:"🍀",image:"./fish/boost.png",robux:"Boost"},
+    {name:"x4–x8 (3 Jam)",price:63360,emoji:"🍀",image:"./fish/boost.png",robux:"Boost"},
+    {name:"x0–x8 (6 Jam)",price:102960,emoji:"🍀",image:"./fish/boost.png",robux:"Boost"},
+    {name:"x0–x8 (12 Jam)",price:150480,emoji:"🍀",image:"./fish/boost.png",robux:"Boost"},
+    {name:"x0–x8 (24 Jam)",price:245520,emoji:"🍀",image:"./fish/boost.png",robux:"Boost"},
+  ],
+  "grid-sawah":[
+    {name:"Extra Slots",price:8000,emoji:"📦",image:"./sawah/sawahindo.png"},
+    {name:"2x Sell",price:8000,emoji:"💰",image:"./sawah/sawahindo.png"},
+    {name:"VIP Farmer",price:40000,emoji:"👨‍🌾",image:"./sawah/sawahindo.png"},
+    {name:"2x Harvest",price:4000,emoji:"🌾",image:"./sawah/sawahindo.png"},
+    {name:"Fast Grow",price:6000,emoji:"🌱",image:"./sawah/sawahindo.png"},
+    {name:"Auto Harvest",price:20000,emoji:"🤖",image:"./sawah/sawahindo.png"},
+    {name:"2x XP",price:12000,emoji:"⬆️",image:"./sawah/sawahindo.png"},
+    {name:"Rain Lover",price:12000,emoji:"🌧️",image:"./sawah/sawahindo.png"},
+    {name:"Boombox",price:16000,emoji:"🎵",image:"./sawah/sawahindo.png"},
+    {name:"Auto Feed Chicken",price:19200,emoji:"🐔",image:"./sawah/sawahindo.png"},
+    {name:"Auto Feed Cow",price:19200,emoji:"🐄",image:"./sawah/sawahindo.png"},
+    {name:"Auto Collect Egg",price:12800,emoji:"🥚",image:"./sawah/sawahindo.png"},
+    {name:"Auto Collect Milk",price:12800,emoji:"🥛",image:"./sawah/sawahindo.png"},
+  ],
+  "grid-dds":[
+    {name:"DragSpec",price:8720,emoji:"🏎️",image:"./dds/dragspec.png"},
+    {name:"Luxury",price:9520,emoji:"✨",image:"./dds/luxury.png"},
+    {name:"Suspension",price:2320,emoji:"🔧",image:"./dds/suspension.png"},
+    {name:"Exclusive Rims",price:6320,emoji:"🔵",image:"./dds/rims.png"},
+    {name:"Slot Expansion",price:7120,emoji:"📦",image:"./dds/slot.png"},
+    {name:"Custom Plate",price:6320,emoji:"🪪",image:"./dds/customplate.png"},
+    {name:"Advance Paint",price:4720,emoji:"🎨",image:"./dds/paint.png"},
+    {name:"2x Paycheck",price:39920,emoji:"💵",image:"./dds/sell.png"},
+    {name:"Boombox",price:2320,emoji:"🎵",image:"./dds/boombox.png"},
+    {name:"Police Pass",price:11920,emoji:"🚔",image:"./dds/police.png"},
+  ],
+  "grid-evade":[
+    {name:"[LIMITED] Bee Set",price:48000,emoji:"🍀",image:"./evade/bee.png"},
+    {name:"Animal Set",price:48000,emoji:"🐾",image:"./evade/animal.png"},
+    {name:"Retro Collection",price:40000,emoji:"🕹️",image:"./evade/retro.png"},
+    {name:"Crystalline Set",price:48000,emoji:"💎",image:"./evade/crystal.png"},
+    {name:"Classic Roblox Set",price:48000,emoji:"🧱",image:"./evade/classic.png"},
+    {name:"+6 Emote",price:24000,emoji:"💃",image:"./evade/slots.png"},
+    {name:"Military Set",price:56000,emoji:"🎖️",image:"./evade/mili.png"},
+    {name:"Emote Pack",price:28000,emoji:"🕺",image:"./evade/emot.png"},
+    {name:"Future Set",price:32000,emoji:"🚀",image:"./evade/future.png"},
+    {name:"Worlds Collide Set",price:28000,emoji:"🌍",image:"./evade/colide.png"},
+  ],
+};
+
+const sectionNames={
+  "grid-robux":"Robux via Login",
+  "grid-blox-gp":"Bloxburg Gamepass","grid-blox-ungu":"Bloxburg Uang Ungu","grid-blox-hijau":"Bloxburg Uang Hijau",
+  "grid-fish-gp":"Fish It Gamepass","grid-fish-special":"Fish It Item Spesial","grid-fish-spin":"Fish It Spin",
+  "grid-fish-emote":"Fish It Emote","grid-fish-boost":"Fish It Boost",
+  "grid-sawah":"Sawah Indo Gamepass","grid-dds":"DDS Gamepass","grid-evade":"EVADE Gamepass"
+};
+
+let cart=[], selPay=null, isProofUploaded=false;
+const fmt=n=>'Rp '+n.toLocaleString('id-ID');
+const total=()=>cart.reduce((s,i)=>s+(i.price*i.qty),0);
+const cartCount=()=>cart.reduce((s,i)=>s+i.qty,0);
+
+function renderProducts(){
+  Object.entries(products).forEach(([gid,items])=>{
+    const g=document.getElementById(gid);
+    if(!g)return;
+    g.innerHTML=items.map((item,i)=>{
+      // Hapus onerror biar kita tau gambarnya benar-benar gagal dimuat atau tidak
+      const mediaContent = item.image 
+        ? `<img src="${item.image}" alt="${item.name}" class="product-custom-img">` 
+        : `<div class="product-emoji">${item.emoji}</div>`;
+      
+      const badgeHTML = item.hot 
+        ? `<span class="card-badge badge-hot">🔥 Terlaris</span>`
+        : `<span class="card-badge">Tersedia</span>`;
+
+      return `
+      <div class="product-card">
+        <div class="card-thumb">
+          <span class="card-sparkle">✨</span>
+          ${mediaContent}
+        </div>
+        <div class="card-body">
+          <div class="product-name">${item.name}</div>
+          <div class="product-mulai">Mulai dari</div>
+          <div class="product-price">${fmt(item.price)}</div>
+          <div class="product-robux">${item.robux || ''}</div>
+          <div class="card-footer">
+            ${badgeHTML}
+            <button class="add-btn" onclick="addCart('${gid}',${i})" aria-label="Beli ${item.name}">→ Beli</button>
+          </div>
+        </div>
+      </div>`;
+    }).join('');
+  });
+}
+
+function addCart(gid,i){
+  const item=products[gid][i];
+  const itemId = gid+'_'+i;
+  const existingItem = cart.find(c => c.id === itemId);
+  
+  if (existingItem) {
+    existingItem.qty += 1;
+  } else {
+    cart.push({
+      id:itemId, 
+      name:item.name, 
+      price:item.price, 
+      emoji:item.emoji, 
+      image:item.image, 
+      section:sectionNames[gid], 
+      qty:1
+    });
+  }
+  
+  updateBadge();
+  toast('✨ Item ditambahkan ke keranjang!');
+}
+
+function updateBadge(){
+  const b=document.getElementById('cartBadge');
+  const count = cartCount();
+  b.textContent = count;
+  b.classList.toggle('visible', count > 0);
+}
+
+let toastTimeout;
+function toast(msg){
+  const t=document.getElementById('cartToast');
+  t.textContent=msg;
+  t.classList.add('show');
+  clearTimeout(toastTimeout);
+  toastTimeout = setTimeout(()=>t.classList.remove('show'), 2500);
+}
+
+function showPage(id){
+  const mainPage=document.getElementById('main-page');
+  const pages=['cart-page','checkout-page','payment-page'];
+  if(id==='main'){
+    mainPage.style.display='block';
+    pages.forEach(p=>{
+      const el=document.getElementById(p);
+      if(el){el.classList.remove('active');}
+    });
+  } else {
+    mainPage.style.display='none';
+    pages.forEach(p=>{
+      const el=document.getElementById(p);
+      if(!el)return;
+      if(p===id){el.classList.add('active');}
+      else{el.classList.remove('active');}
+    });
+  }
+  window.scrollTo(0,0);
+}
+
+function goHome(){showPage('main')}
+function showCart(){renderCart();showPage('cart-page')}
+function showCheckout(){
+  if(cart.length === 0) return;
+  renderCheckSummary();
+  showPage('checkout-page');
+}
+function scrollSec(id){
+  goHome();
+  setTimeout(()=>{
+    const el=document.getElementById(id);
+    if(el) {
+      const y = el.getBoundingClientRect().top + window.scrollY - 80;
+      window.scrollTo({top: y, behavior: 'smooth'});
+    }
+  }, 100);
+}
+function openWaCek(){window.open('https://wa.me/6289606457010?text=Halo+admin+ROEBUX,+saya+mau+cek+status+pesanan+saya.','_blank')}
+function openWaBantuan(){window.open('https://wa.me/6289606457010?text=Halo+admin+ROEBUX,+saya+butuh+bantuan.','_blank')}
+function toggleNav(){document.getElementById('navMobile').classList.toggle('open')}
+
+function renderCart(){
+  const con=document.getElementById('cart-items-container');
+  if(!cart.length){
+    con.innerHTML=`<div class="cart-empty"><div class="empty-emoji">🛒</div>
+      <div style="font-weight:800;font-size:1.2rem;color:var(--text-dark);margin-bottom:8px">Keranjang kosong nih!</div>
+      <div style="font-size:.95rem;margin-bottom:24px">Yuk pilih item yang kamu mau 🌸</div>
+      <button class="btn-primary" style="max-width: 250px; margin: 0 auto;" onclick="goHome()">🎮 Lihat Produk</button></div>`;
+    return;
+  }
+  const rows=cart.map((item,i)=>{
+    const mediaThumb = item.image 
+      ? `<img src="${item.image}" alt="img" class="ci-custom-img">`
+      : `<div class="ci-emoji">${item.emoji}</div>`;
+
+    return `
+    <div class="cart-item">
+      ${mediaThumb}
+      <div class="ci-info">
+        <div class="ci-name">${item.name} <span class="ci-qty-badge">x${item.qty}</span></div>
+        <div class="ci-section">${item.section}</div>
+      </div>
+      <div class="ci-price">${fmt(item.price * item.qty)}</div>
+      <button class="ci-remove" aria-label="Hapus Item" onclick="removeCart(${i})">✕</button>
+    </div>`
+  }).join('');
+  con.innerHTML=rows+`
+    <div class="cart-total-box">
+      <span class="cart-total-label">💜 Total Pembayaran</span>
+      <span class="cart-total-amount">${fmt(total())}</span>
+    </div>
+    <button class="btn-primary" onclick="showCheckout()">✅ Lanjut Checkout</button>
+    <button class="btn-secondary" onclick="goHome()">← Lanjut Belanja</button>`;
+}
+
+function removeCart(i){
+  cart.splice(i,1);
+  updateBadge();
+  renderCart();
+}
+
+function selectPay(m){
+  selPay=m;
+  document.querySelectorAll('.pm-option').forEach(el=>el.classList.toggle('selected',el.dataset.method===m));
+  document.getElementById('err-payment').classList.remove('show');
+}
+
+document.getElementById('wa-number').addEventListener('input', function(e) {
+  this.value = this.value.replace(/[^0-9]/g, '');
+  if(this.value) document.getElementById('err-wa').classList.remove('show');
+});
+document.getElementById('roblox-username').addEventListener('input', function() {
+  if(this.value.trim()) document.getElementById('err-username').classList.remove('show');
+});
+
+function renderCheckSummary(){
+  const el=document.getElementById('checkout-summary');
+  if(!cart.length){el.innerHTML='<div style="color:var(--text-light)">Keranjang kosong.</div>';return;}
+  const rows=cart.map(i=>`
+    <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px dashed var(--purple-200)">
+      <span style="font-size:.9rem;font-weight:700;color:var(--text-dark)"><span class="osm-qty">${i.qty}x</span> ${i.emoji} ${i.name}</span>
+      <span style="font-size:.9rem;font-weight:800;color:var(--purple-600)">${fmt(i.price * i.qty)}</span>
+    </div>`).join('');
+  el.innerHTML=rows+`<div style="display:flex;justify-content:space-between;padding:16px 0 0;font-weight:900;font-size:1.1rem;color:var(--text-dark)">
+    <span>TOTAL</span><span style="color:var(--purple-600)">${fmt(total())}</span></div>`;
+}
+
+function processCheckout(){
+  const u=document.getElementById('roblox-username').value.trim();
+  const w=document.getElementById('wa-number').value.trim();
+  
+  const isWaValid = w.length >= 10 && /^\d+$/.test(w);
+
+  document.getElementById('err-username').classList.toggle('show',!u);
+  document.getElementById('err-wa').classList.toggle('show',!isWaValid);
+  document.getElementById('err-payment').classList.toggle('show',!selPay);
+  
+  if(!u || !isWaValid || !selPay) return;
+  
+  renderPayInfo();
+  showPage('payment-page');
+}
+
+function renderPayInfo(){
+  const info=paymentInfo[selPay];
+  const u=document.getElementById('roblox-username').value.trim();
+  const items=cart.map(i=>`<div class="osm-item"><span><span class="osm-qty">${i.qty}x</span> ${i.emoji} ${i.name}</span> <span>${fmt(i.price * i.qty)}</span></div>`).join('');
+  
+  document.getElementById('pay-order-summary').innerHTML=`
+    <div class="osm-title">📦 Pesanan untuk: ${u}</div>
+    <div style="margin: 12px 0;">${items}</div>
+    <div class="osm-total"><span>Total Tagihan:</span> <span>${fmt(total())}</span></div>`;
+    
+  document.getElementById('pay-method-title').textContent='💳 Pembayaran via '+selPay;
+  const con=document.getElementById('payment-info-container');
+  
+  if(info.type==='qris'){
+    const totalAmt=total();
+    
+    const QRIS_IMG='./ROEQRIS.jpg';
+    
+    con.innerHTML=`
+      <div class="qris-nominal-box">
+        <div class="qris-nominal-label">Nominal yang harus dibayar</div>
+        <div class="qris-nominal-amount">${fmt(totalAmt)}</div>
+      </div>
+      <img src="${QRIS_IMG}" class="qris-real-img" alt="QRIS ROEBUX">
+      <p class="qris-label">📱 Scan QRIS di atas menggunakan M-Banking atau E-Wallet kamu.</p>
+      <div class="qris-note">
+        ⚠️ <strong>Penting:</strong> Pastikan nominal transfer tepat <strong>${fmt(totalAmt)}</strong> ya!<br>
+        Setelah bayar, sertakan bukti transfer dengan upload foto di bawah.
+      </div>`;
+  } else if(info.type==='ewallet'){
+    con.innerHTML=`<div class="ewallet-info">
+      <div class="ewallet-row"><span class="ewallet-key">Platform</span><span class="ewallet-val">${selPay}</span></div>
+      <div class="ewallet-row"><span class="ewallet-key">Nomor Tujuan</span><span class="ewallet-val" id="copy-target">${info.number}</span></div>
+      <div class="ewallet-row"><span class="ewallet-key">Atas Nama</span><span class="ewallet-val">${info.name}</span></div>
+    </div><button class="copy-btn" onclick="copyText('${info.number}','Nomor berhasil disalin! ✅')">📋 Salin Nomor ${selPay}</button>`;
+  } else {
+    con.innerHTML=`<div class="ewallet-info">
+      <div class="ewallet-row"><span class="ewallet-key">Bank Tujuan</span><span class="ewallet-val">${info.bank}</span></div>
+      <div class="ewallet-row"><span class="ewallet-key">No. Rekening</span><span class="ewallet-val" id="copy-target">${info.number}</span></div>
+      <div class="ewallet-row"><span class="ewallet-key">Atas Nama</span><span class="ewallet-val">${info.name}</span></div>
+    </div><button class="copy-btn" onclick="copyText('${info.number}','Rekening berhasil disalin! ✅')">📋 Salin Rekening</button>`;
+  }
+}
+
+function copyText(text,msg){
+  if(navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(()=>toast(msg));
+  } else {
+      const t=document.createElement('textarea');
+      t.value=text;
+      t.style.position = 'absolute';
+      t.style.left = '-9999px';
+      document.body.appendChild(t);
+      t.select();
+      document.execCommand('copy');
+      document.body.removeChild(t);
+      toast(msg);
+  }
+}
+
+function handleProofUpload(event) {
+  const file = event.target.files[0];
+  if (file) {
+    if (file.size > 5 * 1024 * 1024) { 
+      toast("⚠️ Ukuran file terlalu besar! Maksimal 5MB.");
+      return;
+    }
+    
+    const reader = new FileReader();
+    reader.onload = function(e) {
+      document.getElementById('proofPreview').src = e.target.result;
+      document.getElementById('proofPreview').style.display = 'block';
+      document.getElementById('uploadPlaceholder').style.display = 'none';
+      document.getElementById('removeProofBtn').style.display = 'inline-flex';
+      document.getElementById('uploadArea').style.padding = '10px';
+      isProofUploaded = true;
+      toast("📸 Bukti berhasil di-upload!");
+    }
+    reader.readAsDataURL(file);
+  }
+}
+
+function removeProof() {
+  document.getElementById('proofInput').value = '';
+  document.getElementById('proofPreview').src = '';
+  document.getElementById('proofPreview').style.display = 'none';
+  document.getElementById('uploadPlaceholder').style.display = 'block';
+  document.getElementById('removeProofBtn').style.display = 'none';
+  document.getElementById('uploadArea').style.padding = '30px 20px';
+  isProofUploaded = false;
+  toast("🗑️ Bukti pembayaran dihapus.");
+}
+
+function openWA() {
+  const modalOverlay = document.getElementById('waModalOverlay');
+  const modalDesc = document.getElementById('waModalDesc');
+  
+  if (isProofUploaded) {
+    modalDesc.innerHTML = "Keren! Bukti transfer sudah disiapkan. Jangan lupa <strong>KIRIMKAN/PASTE FOTO BUKTI TRANSFER</strong> yang barusan kamu upload ke chat Admin WA nanti ya! 💜";
+  } else {
+    modalDesc.innerHTML = "Pesan otomatis sudah disiapkan. Jika kamu punya bukti transfer, jangan lupa <strong>KIRIM/ATTACH</strong> fotonya di chat Admin ya agar lebih cepat diproses! 💜";
+  }
+  
+  modalOverlay.classList.add('show');
+}
+
+function closeModal() {
+  document.getElementById('waModalOverlay').classList.remove('show');
+}
+
+function executeWA() {
+  closeModal();
+  
+  const u = document.getElementById('roblox-username').value.trim();
+  const w = document.getElementById('wa-number').value.trim();
+  const lines = cart.map(i => `- ${i.qty}x ${i.emoji} ${i.name} (${fmt(i.price * i.qty)})`).join('\n');
+  
+  let msg = `Halo admin ROEBUX, saya sudah melakukan pembayaran.\n\n*Detail Pesanan:*\n- Username Roblox: ${u}\n- No. WA Pelanggan: ${w}\n- Metode Bayar: ${selPay}\n\n*Item yang dibeli:*\n${lines}\n\n*Total Tagihan:* ${fmt(total())}\n\nMohon segera diproses ya kak. Terima kasih! 💜`;
+  
+  if (isProofUploaded) {
+     msg += `\n\n_[Catatan Sistem: User ini telah menyiapkan bukti transfer di website. Cek foto yang akan dikirimkan]_`;
+  }
+
+  window.open(`https://wa.me/6289606457010?text=${encodeURIComponent(msg)}`, '_blank');
+}
+
+function animCounter(el,target,sfx=''){
+  let cur=0;
+  const step=Math.ceil(target/50);
+  const iv=setInterval(()=>{
+    cur=Math.min(cur+step,target);
+    el.textContent=cur.toLocaleString('id-ID')+sfx;
+    if(cur>=target) clearInterval(iv);
+  },30);
+}
+
+function initStats(){
+  const ob=new IntersectionObserver(entries=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        animCounter(document.getElementById('stat-robux'),50000000,' R$');
+        animCounter(document.getElementById('stat-trx'),99999,'');
+        ob.disconnect();
+      }
+    });
+  },{threshold:.3});
+  const sb=document.querySelector('.stats-bar');
+  if(sb)ob.observe(sb);
+}
+
+function createSparkles(){
+  const con=document.getElementById('sparkleContainer');
+  for(let i=0;i<30;i++){
+    const sp=document.createElement('div');
+    sp.className='sp';
+    sp.style.left=Math.random()*100+'%';
+    sp.style.top=(20+Math.random()*80)+'%';
+    sp.style.animationDelay=(Math.random()*6)+'s';
+    sp.style.animationDuration=(3+Math.random()*4)+'s';
+    con.appendChild(sp);
+  }
+}
+
+renderProducts();
+createSparkles();
+updateBadge();
+initStats();
+</script>
+</body>
+</html>
